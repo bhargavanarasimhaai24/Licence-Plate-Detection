@@ -1,0 +1,78 @@
+{
+    "source_image": "C:\\Users\\kbhar\\OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\SIH_2026\\input\\test_image.jpg",
+    "image_dimensions": {
+        "height": 730,
+        "width": 1920
+    },
+    "total_vehicles_processed": 2,
+    "total_license_plates_detected": 2,
+    "annotated_image_path": "output\\annotated_license_plates.jpg",
+    "vehicles": [
+        {
+            "vehicle_id": 1,
+            "vehicle_class_id": 1,
+            "vehicle_class": "car",
+            "vehicle_confidence": 0.88,
+            "bbox": [
+                315,
+                166,
+                923,
+                573
+            ],
+            "vehicle_crop_path": "output\\crops\\vehicle_1_car.jpg",
+            "license_plates": [
+                {
+                    "lp_id": 1,
+                    "lp_confidence": 0.3511,
+                    "detection_method": "YOLO_LicensePlate",
+                    "crop_relative_bbox": [
+                        106,
+                        284,
+                        260,
+                        327
+                    ],
+                    "full_image_bbox": [
+                        421,
+                        450,
+                        575,
+                        493
+                    ],
+                    "lp_crop_path": "output\\license_plates\\lp_vehicle_1_car_1.jpg"
+                }
+            ]
+        },
+        {
+            "vehicle_id": 2,
+            "vehicle_class_id": 1,
+            "vehicle_class": "car",
+            "vehicle_confidence": 0.7324,
+            "bbox": [
+                1043,
+                130,
+                1599,
+                559
+            ],
+            "vehicle_crop_path": "output\\crops\\vehicle_2_car.jpg",
+            "license_plates": [
+                {
+                    "lp_id": 1,
+                    "lp_confidence": 0.9677,
+                    "detection_method": "YOLO_LicensePlate",
+                    "crop_relative_bbox": [
+                        278,
+                        288,
+                        436,
+                        337
+                    ],
+                    "full_image_bbox": [
+                        1321,
+                        418,
+                        1479,
+                        467
+                    ],
+                    "lp_crop_path": "output\\license_plates\\lp_vehicle_2_car_1.jpg"
+                }
+            ]
+        }
+    ]
+}

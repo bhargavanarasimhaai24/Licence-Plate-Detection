@@ -1,0 +1,37 @@
+{
+    "source_image": "C:\\Users\\kbhar\\OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\SIH_2026\\input\\test_image.jpg",
+    "image_dimensions": {
+        "height": 730,
+        "width": 1920
+    },
+    "total_vehicles_detected": 2,
+    "annotated_image_path": "output\\annotated_detection.jpg",
+    "vehicles": [
+        {
+            "vehicle_id": 1,
+            "vehicle_class_id": 1,
+            "vehicle_class": "car",
+            "vehicle_confidence": 0.88,
+            "bbox": [
+                315,
+                166,
+                923,
+                573
+            ],
+            "vehicle_crop_path": "output\\crops\\vehicle_1_car.jpg"
+        },
+        {
+            "vehicle_id": 2,
+            "vehicle_class_id": 1,
+            "vehicle_class": "car",
+            "vehicle_confidence": 0.7324,
+            "bbox": [
+                1043,
+                130,
+                1599,
+                559
+            ],
+            "vehicle_crop_path": "output\\crops\\vehicle_2_car.jpg"
+        }
+    ]
+}
