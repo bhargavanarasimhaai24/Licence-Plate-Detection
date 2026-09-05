@@ -24,7 +24,9 @@ Both models in this pipeline utilize **transfer learning and fine-tuning** to ac
 
 * **Model 1 (Vehicle Detection — `models/vehicle_detector_yolo11n.pt`)**:
   * **Base Model**: YOLO11n (Nano variant optimized for real-time edge performance).
-  * **Fine-Tuning**: Fine-tuned on custom vehicle datasets covering 5 target classes (`auto_rickshaw`, `car`, `bus`, `motorcycle`, `truck`).
+  * **Dataset Used**: Roboflow **`Vehicle-Detection-2` Processed Dataset** (`Vehicle-detection-2-processed/data.yaml`).
+  * **Fine-Tuning Parameters**: Trained for **80 epochs** (patience=15 early stopping) at resolution `imgsz=800`, `batch=16`.
+  * **Classes (5)**: `0: auto_rickshaw`, `1: car`, `2: bus`, `3: motorcycle`, `4: truck`.
   * **Fallback System**: If custom weights are missing, `model1.py` automatically falls back to standard COCO pre-trained `yolo11n.pt` with class filtering (COCO IDs: 2=car, 3=motorcycle, 5=bus, 7=truck) and remapping to the 5-class target schema.
 
 * **Model 2 (License Plate Detection — `models/license_plate_detector.pt`)**:
